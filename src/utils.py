@@ -15,7 +15,7 @@ def exibirAlternativas(*alternativas: str) -> None:
     for indice, alternativa in alternativasFiltradas:
         print(modeloAlternativa.format(
             Fore.GREEN + str(indice) + Style.RESET_ALL, 
-            Fore.CYAN + alternativa + Style.RESET_ALL))
+            alternativa))
     deinit()
     
 def limparTerminal() -> None:
